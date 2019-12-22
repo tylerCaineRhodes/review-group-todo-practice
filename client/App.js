@@ -7,7 +7,7 @@ export default class App extends React.Component {
     this.state = {
       textInput: '',
       toDoList: ['buy milk', 'buy cheese']
-    }
+    };
     this.handleChange=this.handleChange.bind(this);
     this.clicked=this.clicked.bind(this);
   }
@@ -30,6 +30,9 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
+        <h1>
+          TO DO LIST:
+        </h1>
         <InputComponent
           handleChange={this.handleChange}
           text={this.state.textInput} 
@@ -42,3 +45,10 @@ export default class App extends React.Component {
     );
   }
 }
+
+
+// {this.state.tasks.map(task => {
+//   return (
+//     <Task id={task.id} task={task.task} deleteTask={this.deleteTask} />
+//   );
+// })}
