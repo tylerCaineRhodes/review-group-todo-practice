@@ -1,4 +1,5 @@
 import React from 'react';
+import SearchBar from './SearchBar.js'
 
  class App extends React.Component {
   constructor(props) {
@@ -11,6 +12,8 @@ import React from 'react';
        return (
            <div>
              <h1>Hello!</h1>
+             <SearchBar />
+             
             </div>
        );
    }
